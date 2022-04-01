@@ -60,4 +60,12 @@ HashSet cannot contain duplicate elements. Hence, each hash set element has a un
 > Note: HashSet is not synchronized. That is if multiple threads access the hash set at the same time and one of the threads modifies the hash set. Then it must be externally synchronized.
 ### LinkedHashSet
 ### EnumSet
+The EnumSet provides an efficient way to store enum values than other set implementations (like HashSet, TreeSet).
+
+An enum set only stores enum values of a specific enum. Hence, the JVM already knows all the possible values of the set.
+
+This is the reason why enum sets are internally implemented as a sequence of bits. Bits specifies whether elements are present in the enum set or not.
+
+The bit of a corresponding element is turned on if that element is present in the set.
+
 ### TreeSet
