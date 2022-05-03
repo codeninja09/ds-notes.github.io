@@ -67,3 +67,62 @@ A full Binary tree is a special type of binary tree in which every parent node/i
 
 ![image](https://user-images.githubusercontent.com/3500791/166121717-a2843aa2-bf70-43d2-babf-1d63501e9623.png)
 
+## Traversal 
+
+![image](https://user-images.githubusercontent.com/3500791/166345988-5574a620-eee9-445e-9a47-9072e9fa879d.png)
+
+- Depth First Traversal
+  - InOrder (Left Root Right)
+  - PreOrder (Root Left Right)
+  - PostOrder (Left Right Root)
+- Breadth First Traversal
+
+```java
+  // Inorder
+  void printInorder(Node node)
+    {
+        if (node == null)
+            return;
+ 
+        /* first recur on left child */
+        printInorder(node.left);
+ 
+        /* then print the data of node */
+        System.out.print(node.key + " ");
+ 
+        /* now recur on right child */
+        printInorder(node.right);
+    }
+  // Pre order
+  void printPreorder(Node node)
+    {
+        if (node == null)
+            return;
+ 
+        /* first print data of node */
+        System.out.print(node.key + " ");
+ 
+        /* then recur on left subtree */
+        printPreorder(node.left);
+ 
+        /* now recur on right subtree */
+        printPreorder(node.right);
+    }
+  // Post Order
+    void printPostorder(Node node)
+    {
+        if (node == null)
+            return;
+ 
+        // first recur on left subtree
+        printPostorder(node.left);
+ 
+        // then recur on right subtree
+        printPostorder(node.right);
+ 
+        // now deal with the node
+        System.out.print(node.key + " ");
+    }
+  // Breadth First 
+
+```
