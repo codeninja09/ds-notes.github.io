@@ -1,4 +1,5 @@
 ## LinkedList using Array
+https://www.geeksforgeeks.org/create-linked-list-from-a-given-array/
 ```java
 ```
 
@@ -227,7 +228,8 @@ public class StackUsingLinkedList {
   ```
 
 ## Queue using Array
-
+https://www.geeksforgeeks.org/array-implementation-of-queue-simple/
 ## Queue using LinkedList
-
+https://www.geeksforgeeks.org/queue-linked-list-implementation/
 ## Queue using Stack
+https://www.geeksforgeeks.org/queue-using-stacks/
