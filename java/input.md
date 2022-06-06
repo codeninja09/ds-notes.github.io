@@ -1,5 +1,20 @@
+---
+layout: default
+title: Inputs
+parent: java
+---
+
 # Ways to take input from console
 
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
 ## BufferedReader
 - Input is buffered for efficient reading
 
