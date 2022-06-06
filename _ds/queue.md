@@ -2,6 +2,7 @@
 layout: default
 title: Queue
 parent: ds
+has_children: false
 ---
 
 # Queue

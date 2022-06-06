@@ -2,6 +2,7 @@
 layout: default
 title: Inputs
 parent: java
+has_children: false
 ---
 
 # Ways to take input from console

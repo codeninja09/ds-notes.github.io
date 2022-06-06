@@ -2,6 +2,7 @@
 layout: default
 title: Stack
 parent: ds
+has_children: false
 ---
 
 # Stack

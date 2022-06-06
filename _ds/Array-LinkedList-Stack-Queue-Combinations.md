@@ -2,6 +2,7 @@
 layout: default
 title: Array
 parent: ds
+has_children: false
 ---
 
 ## LinkedList using Array
