@@ -1,3 +1,9 @@
+---
+layout: default
+title: Array
+parent: ds
+---
+
 ## LinkedList using Array
 https://www.geeksforgeeks.org/create-linked-list-from-a-given-array/
 ```java

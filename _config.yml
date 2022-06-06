@@ -2,15 +2,40 @@ remote_theme: just-the-docs/just-the-docs
 
 
 collections:
-  Combinations:
+  combinations:
     permalink: "/:collection/:path:output_ext"
     output: true
-    
- 
+  ds:
+    permalink: "/:collection/:path:output_ext"
+    output: true  
+  impl:
+    permalink: "/:collection/:path:output_ext"
+    output: true  
+  java:
+    permalink: "/:collection/:path:output_ext"
+    output: true
+
+
+
 just_the_docs:
   collections:
-    Combinations:
+    combinations:
       name: Combinations
+      nav_exclude: false
+      nav_fold: true
+      search_exclude: true
+    ds:
+      name: Data Structures
+      nav_exclude: false
+      nav_fold: true
+      search_exclude: true
+    impl:
+      name: Implementations
+      nav_exclude: false
+      nav_fold: true
+      search_exclude: true
+    java:
+      name: Java
       nav_exclude: false
       nav_fold: true
       search_exclude: true
