@@ -1,3 +1,9 @@
+---
+layout: default
+title: Dequeue
+has_children: false
+---
+
 Dequeue
 -------
 
