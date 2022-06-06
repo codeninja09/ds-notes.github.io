@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Tree
-parent: ds
 has_children: false
 ---
 

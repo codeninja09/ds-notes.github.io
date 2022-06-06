@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Inputs
-parent: java
 has_children: false
 ---
 
