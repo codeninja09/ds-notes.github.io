@@ -1,3 +1,9 @@
+---
+layout: default
+title: Queue
+has_children: false
+---
+
 # Queue
 
 Queue is an interface which extends Collection interface, it provides the functionality of the Queue data structure.

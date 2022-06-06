@@ -14,6 +14,9 @@ collections:
   java:
     permalink: "/:collection/:path:output_ext"
     output: true
+  test:
+    permalink: "/:collection/:path:output_ext"
+    output: true  
 
 
 
@@ -39,3 +42,8 @@ just_the_docs:
       nav_exclude: false
       nav_fold: false
       search_exclude: false
+    test:
+      name: Test
+      nav_exclude: false
+      nav_fold: false
+      search_exclude: false  

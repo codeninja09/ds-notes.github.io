@@ -1,3 +1,9 @@
+---
+layout: default
+title: Misc
+has_children: false
+---
+
 ### clear the console
 clears the console statements
 ```java

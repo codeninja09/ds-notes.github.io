@@ -1,3 +1,9 @@
+---
+layout: default
+title: Set
+has_children: false
+---
+
 # Set
 The Set interface of the Java Collections framework provides the features of the mathematical set in Java. It extends the Collection interface.
 
