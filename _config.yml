@@ -22,20 +22,20 @@ just_the_docs:
     combinations:
       name: Combinations
       nav_exclude: false
-      nav_fold: true
+      nav_fold: false
       search_exclude: false
     ds:
       name: Data Structures
       nav_exclude: false
-      nav_fold: true
+      nav_fold: false
       search_exclude: false
     impl:
       name: Implementations
       nav_exclude: false
-      nav_fold: true
+      nav_fold: false
       search_exclude: false
     java:
       name: Java
       nav_exclude: false
-      nav_fold: true
+      nav_fold: false
       search_exclude: false
