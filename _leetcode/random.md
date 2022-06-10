@@ -16,7 +16,7 @@ has_children: false
 
 ---
 
-1700. Number of Students Unable to Eat Lunch
+## 1700. Number of Students Unable to Eat Lunch
 
 ```
 The school cafeteria offers circular and square sandwiches at lunch break, referred to by numbers 0 and 1 respectively. All students stand in a queue. Each student either prefers square or circular sandwiches.
@@ -115,7 +115,7 @@ class Solution {
 }
 ```
 
-2073. Time Needed to Buy Tickets
+## 2073. Time Needed to Buy Tickets
 
 
 ```
@@ -165,7 +165,7 @@ class Solution {
 }
 ```
 
-405. Convert a Number to Hexadecimal
+## 405. Convert a Number to Hexadecimal
 
 ```
 Given an integer num, return a string representing its hexadecimal representation. For negative integers, two’s complement method is used.
@@ -206,7 +206,7 @@ class Solution {
 }
 ```
 
-1047. Remove All Adjacent Duplicates In String
+## 1047. Remove All Adjacent Duplicates In String
 
 ```
 You are given a string s consisting of lowercase English letters. A duplicate removal consists of choosing two adjacent and equal letters and removing them.
@@ -264,7 +264,7 @@ public String removeDuplicates(String S) {
 
 ```
 
-1209. Remove All Adjacent Duplicates in String II
+## 1209. Remove All Adjacent Duplicates in String II
 
 ```
 You are given a string s and an integer k, a k duplicate removal consists of choosing k adjacent and equal letters from s and removing them, causing the left and the right side of the deleted substring to concatenate together.
