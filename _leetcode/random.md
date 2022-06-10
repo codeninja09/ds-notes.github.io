@@ -17,6 +17,7 @@ has_children: false
 ---
 
 1700. Number of Students Unable to Eat Lunch
+
 ```
 The school cafeteria offers circular and square sandwiches at lunch break, referred to by numbers 0 and 1 respectively. All students stand in a queue. Each student either prefers square or circular sandwiches.
 
@@ -112,10 +113,10 @@ class Solution {
         return 0;
     }
 }
-
 ```
 
 2073. Time Needed to Buy Tickets
+
 
 ```
 There are n people in a line queuing to buy tickets, where the 0th person is at the front of the line and the (n - 1)th person is at the back of the line.
