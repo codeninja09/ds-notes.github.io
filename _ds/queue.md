@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Queue
-has_children: false
+has_children: true
 ---
 
 # Queue
