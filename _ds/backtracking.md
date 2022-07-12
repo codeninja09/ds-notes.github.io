@@ -220,6 +220,7 @@ class Solution {
 ### Letter Combinations of a Phone Number
 
 [leetcode-17](https://leetcode.com/problems/letter-combinations-of-a-phone-number/discuss/2021106/Java-4-Approaches%3A-BF-4-Loops-Backtracking-BFS-Queue-with-Image-Explaination)
+
 ```
 Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.
 
@@ -242,7 +243,7 @@ Output: ["a","b","c"]
 ```java
 class Solution {
     
-    final char[][] letters = {{},{},{'a','b','c'},{'d','e','f'},{'g','h','i'},{'j','k','l'}, {'m','n','o'},{'p','q','r','s'},{'t','u','v'},{'w','x','y','z'}};
+    final char[][] letters = { {},{},{'a','b','c'},{'d','e','f'},{'g','h','i'},{'j','k','l'}, {'m','n','o'},{'p','q','r','s'},{'t','u','v'},{'w','x','y','z'} };
     
     public List<String> letterCombinations(String digits) {
         int len = digits.length();
