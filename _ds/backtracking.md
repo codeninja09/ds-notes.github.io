@@ -217,8 +217,9 @@ class Solution {
 }
 ```
 
-### [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
+### Letter Combinations of a Phone Number
 
+[leetcode-17](https://leetcode.com/problems/letter-combinations-of-a-phone-number/discuss/2021106/Java-4-Approaches%3A-BF-4-Loops-Backtracking-BFS-Queue-with-Image-Explaination)
 ```
 Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.
 
