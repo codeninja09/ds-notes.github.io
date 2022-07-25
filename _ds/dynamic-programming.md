@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 
-has_children: trueDynamic Programming
+title: Dynamic Programming
+has_children: true
 ---
 
 # Dynamic Programming

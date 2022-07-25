@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Tree
-has_children: false
+has_children: true
 ---
 
 # Tree Data Structure
