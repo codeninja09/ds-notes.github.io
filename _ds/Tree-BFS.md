@@ -237,3 +237,101 @@ class Solution {
     }
 }
 ```
+
+## Depth
+
+### Max Depth
+
+[104](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
+
+```java
+// DFS
+class Solution {
+    public int maxDepth(TreeNode root) {
+        if(root == null){
+            return 0;
+        }
+        return 1 + Math.max(maxDepth(root.right),maxDepth(root.left));
+    }    
+}
+
+// BFS
+class Solution {
+    public int maxDepth(TreeNode root) {
+        int depth = 0;
+        if(null == root){
+            return depth;
+        }
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        while(!queue.isEmpty()){
+            int size = queue.size();
+            depth++;
+            while(size > 0){
+                size--;
+                TreeNode node = queue.remove();
+                if(null != node.left){
+                    queue.add(node.left);
+                }
+                if(null != node.right){
+                    queue.add(node.right);
+                }
+            }
+        }
+        return depth;
+    }
+}
+```
+
+### Min Depth
+
+[111](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
+
+```java
+// DFS
+class Solution {
+    public int minDepth(TreeNode root) {
+        if(null == root){
+            return 0;
+        }
+        
+        if(null != root.left && null != root.right){
+            return 1 + Math.min(minDepth(root.left), minDepth(root.right));
+        }else{
+            return 1 + Math.max(minDepth(root.left), minDepth(root.right));    
+        }
+    }
+}
+
+// BFS
+class Solution {
+    public int minDepth(TreeNode root) {
+        if(null == root){
+            return 0;
+        }
+        
+        int depth = 0;
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        while(!queue.isEmpty()){
+            depth++;
+            int size = queue.size();
+            for(int i = 0; i< size ; i++){
+                TreeNode node = queue.remove();
+                if(null == node.left && null == node.right){
+                    return depth;
+                }
+                
+                if(null != node.left){
+                    queue.add(node.left);
+                }
+                
+                if(null != node.right){
+                    queue.add(node.right);
+                }
+            }            
+        }
+        return depth;
+    }
+}
+```
