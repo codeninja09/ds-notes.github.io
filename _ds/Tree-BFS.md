@@ -22,7 +22,7 @@ Any problem involving the traversal of a tree in a level-by-level order can be e
 ## Binary Tree Level Order Traversal
 [102](https://leetcode.com/problems/binary-tree-level-order-traversal)
 
-
+<img width="335" alt="image" src="https://user-images.githubusercontent.com/3500791/180861146-c821b444-f646-4e30-b966-f91b322c62d6.png">
 
 ```
 Given the root of a binary tree, return the level order traversal of its nodes' values. (i.e., from left to right, level by level).
