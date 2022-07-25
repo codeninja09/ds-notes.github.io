@@ -84,3 +84,156 @@ class Solution {
     }
 }
 ```
+
+
+## Binary Tree Level Order Traversal II
+[107](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)
+
+<img width="335" alt="image" src="https://user-images.githubusercontent.com/3500791/180861146-c821b444-f646-4e30-b966-f91b322c62d6.png">
+
+```
+Given the root of a binary tree, return the bottom-up level order traversal of its nodes' values. (i.e., from left to right, level by level from leaf to root).
+
+Example 1:
+Input: root = [3,9,20,null,null,15,7]
+Output: [[15,7],[9,20],[3]]
+
+Example 2:
+Input: root = [1]
+Output: [[1]]
+
+Example 3:
+Input: root = []
+Output: []
+```
+
+```java
+class Solution {
+    public List<List<Integer>> levelOrderBottom(TreeNode root) {
+        List<List<Integer>> result = new ArrayList<>();
+        Queue<TreeNode> queue = new LinkedList<>();
+        if(root == null){
+            return result;
+        }
+        queue.add(root);
+        while(!queue.isEmpty()){
+            int size = queue.size();
+            List<Integer> levelNodes = new ArrayList<>(); 
+            for(int i =0 ; i < size ; i++){
+                TreeNode node = queue.remove();
+                levelNodes.add(node.val);
+                if(null != node.left){
+                    queue.add(node.left);
+                }
+                if(null != node.right){
+                    queue.add(node.right);
+                }
+            }
+            result.add(0,levelNodes);
+        }
+        return result;
+    }
+}
+```
+
+## Average of Levels in Binary Tree
+[637](https://leetcode.com/problems/average-of-levels-in-binary-tree/)
+
+<img width="335" alt="image" src="https://user-images.githubusercontent.com/3500791/180861146-c821b444-f646-4e30-b966-f91b322c62d6.png">
+
+```
+Given the root of a binary tree, return the average value of the nodes on each level in the form of an array. Answers within 10-5 of the actual answer will be accepted.
+
+Input: root = [3,9,20,null,null,15,7]
+Output: [3.00000,14.50000,11.00000]
+Explanation: The average value of nodes on level 0 is 3, on level 1 is 14.5, and on level 2 is 11.
+Hence return [3, 14.5, 11].
+
+```
+
+```java
+class Solution {
+    public List<Double> averageOfLevels(TreeNode root) {
+        List<Double> result = new ArrayList<>();
+        Queue<TreeNode> queue = new LinkedList<>();
+        if(null == root){
+            return result;
+        }
+        queue.offer(root);
+        while(!queue.isEmpty()){
+            int size = queue.size();
+            double temp = 0;
+            for(int i= 0 ; i < size ; i++){
+                TreeNode current = queue.poll();
+                temp += current.val;
+                if(null != current.left){
+                    queue.add(current.left);    
+                }
+                if(null != current.right){
+                    queue.add(current.right);    
+                }
+            }
+            result.add(temp/size);
+        }
+        return result;
+    }
+}
+```
+
+## 
+[103](Binary Tree Zigzag Level Order Traversal)
+
+```
+Given the root of a binary tree, return the zigzag level order traversal of its nodes' values. (i.e., from left to right, then right to left for the next level and alternate between).
+
+Example 1:
+Input: root = [3,9,20,null,null,15,7]
+Output: [[3],[20,9],[15,7]]
+
+Example 2:
+Input: root = [1]
+Output: [[1]]
+
+Example 3:
+Input: root = []
+Output: []
+```
+
+```java
+class Solution {
+    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+        List<List<Integer>> result = new ArrayList<>();
+        if(null == root){
+            return result;
+        }
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        boolean leftToRight = true;
+        while(!queue.isEmpty()){
+            int size = queue.size();
+            List<Integer> levelData = new ArrayList<>();
+            for(int i =0; i < size ; i++){
+                TreeNode node = queue.remove();
+                
+                if(leftToRight){
+                    levelData.add(node.val);
+                }else{
+                    levelData.add(0,node.val);
+                }
+                
+                if(null != node.left){
+                    queue.add(node.left);
+                }
+                
+                if(null != node.right){
+                    queue.add(node.right);
+                }
+            }
+            leftToRight = !leftToRight;
+            result.add(levelData);
+        }
+        
+        return result;
+    }
+}
+```
