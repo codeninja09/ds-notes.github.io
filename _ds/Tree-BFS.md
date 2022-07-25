@@ -342,6 +342,9 @@ class Solution {
 Given a binary tree and a node, find the level order successor of the given node in the tree. The level order successor is the node that appears right after the given node in the level order traversal.
 ```
 
+<img width="399" alt="image" src="https://user-images.githubusercontent.com/3500791/180888805-0a159a9b-180e-4b1b-843a-470b1c4d61fa.png">
+
+
 ```java
 public static TreeNode findSuccessor(TreeNode root, int key) {
     if (root == null)
