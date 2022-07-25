@@ -28,6 +28,16 @@ We visit all the nodes at the same level before visiting the nodes at the next l
 
 ### Pre-Order Traversal
 
+
+
 ### In-Order Traversal
 
+with this order we can print the elements in increasing order, if we reverse this order then we can print the elments in decreasing order.
+
+> left - root - right (Increasing Order)
+> right - root - left (Decreasing Order)
+
+
 ### Post-Order Traversal
+
+> To find the height of a tree we use post-order traversal

@@ -6,6 +6,16 @@ has_children: true
 
 # Tree Data Structure
 
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
 Tree is a nonlinear hierarchical data structure that consists of nodes connected by edges.
 
 ## Why Tree Data Structure?
